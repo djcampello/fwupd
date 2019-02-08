@@ -3,9 +3,7 @@ extraction:
     python_setup:
       version: 3
   cpp:
-     configure:
-        command:
-        - meson setup build
      index:
-        command:
+        build_command:
+        - meson setup build
         - ninja -C build
